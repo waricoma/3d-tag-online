@@ -1,0 +1,101 @@
+{
+  "name": "3d-tag-online",
+  "version": "1.0.0",
+  "private": true,
+  "description": "3D TAG ONLINE using Electron, WebRTC(SkyWay), Unity",
+  "author": "waricoma <waricoma@devne.co>",
+  "contributors": [
+    "waricoma <waricoma@devne.co>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/waricoma/3d-tag-online#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waricoma/3d-tag-online.git"
+  },
+  "keywords": [
+    "Electron",
+    "WebRTC",
+    "SkyWay",
+    "Unity"
+  ],
+  "bugs": {
+    "url": "https://github.com/waricoma/3d-tag-online/issues"
+  },
+  "engines": {
+    "yarn": ">=1.22.4",
+    "node": ">=12.16.2"
+  },
+  "scripts": {
+    "start": "yarn run generate-vue && yarn run start-electron",
+    "start-electron": "cd ./3d-tag-electron && yarn install && yarn run build && yarn run start",
+    "generate-vue": "# cd ./vue && yarn install && yarn run generate",
+    "commit": "git cz",
+    "test": "yarn run test-electron && yarn run test-vue",
+    "test-electron": "cd ./3d-tag-electron && yarn run test",
+    "test-vue": "# cd ./vue && yarn run test",
+    "build": "yarn run build-electron && yarn run build-vue",
+    "build-electron": "cd ./3d-tag-electron && yarn run build",
+    "build-vue": "# cd ./vue && yarn run generate",
+    "document": "# yarn run document-electron && yarn run document-vue",
+    "document-electron": "cd ./3d-tag-electron && yarn run document",
+    "document-vue": "# cd ./vue && yarn run document",
+    "readme": "npx readme-md-generator && yarn run readme-electron && yarn run readme-vue",
+    "readme-electron": "cd ./3d-tag-electron && npx readme-md-generator",
+    "readme-vue": "# Now using pre-generated readme...",
+    "lint": "# yarn run lint-code && yarn run lint-md && yarn run lint-text-en",
+    "lint-code": "yarn run lint-code-electron && yarn run lint-code-vue",
+    "lint-code-electron": "cd ./3d-tag-electron && yarn run lint",
+    "lint-code-vue": "# cd ./vue && yarn run lint",
+    "lint-text-en": "yarn run save-md && yarn run lint-text-en-electron && yarn run lint-text-en-vue",
+    "lint-text-en-electron": "textlint --fix ./3d-tag-electron/*.md --config ./.textlints/.en.textlintrc",
+    "lint-text-en-vue": "# textlint --fix ./vue/*.md --config ./.textlints/.en.textlintrc",
+    "lint-text-ja": "yarn run save-md && yarn run lint-text-ja-electron && yarn run lint-text-ja-vue",
+    "lint-text-ja-electron": "textlint --fix ./3d-tag-electron/*.md --config ./.textlints/.ja.textlintrc",
+    "lint-text-ja-vue": "# textlint --fix ./vue/*.md --config ./.textlints/.ja.textlintrc",
+    "lint-md": "# yarn run lint-md-electron && yarn run lint-md-vue",
+    "lint-md-electron": "markdownlint ./3d-tag-electron/*.md --fix",
+    "lint-md-vue": "# markdownlint ./vue/*.md --fix",
+    "save-md": "yarn run save-md-electron && yarn run save-md-vue",
+    "save-md-electron": "mkdir -p ./.textlints/saved/3d-tag-electron && cp ./3d-tag-electron/*.md ./.textlints/saved/3d-tag-electron",
+    "save-md-vue": "# mkdir -p ./.textlints/saved/vue && cp ./vue/*.md ./.textlints/saved/vue",
+    "restore-md": "yarn run restore-md-electron && yarn run restore-md-vue",
+    "restore-md-electron": "mkdir -p ./.textlints/saved/3d-tag-electron && cp ./.textlints/saved/3d-tag-electron/*.md ./3d-tag-electron",
+    "restore-md-vue": "# mkdir -p ./.textlints/saved/vue &&  cp ./.textlints/saved/vue/*.md ./vue",
+    "ignore": "curl https://raw.githubusercontent.com/microsoft/TypeScript/master/.gitignore | add-text-to-markdown ./.gitignore --section 'microsoft/TypeScript:.gitignore' --write"
+  },
+  "devDependencies": {
+    "@textlint/textlint-plugin-markdown": "5.1.12",
+    "add-text-to-markdown": "2.0.0",
+    "commitizen": "4.1.2",
+    "cz-emoji": "1.2.1",
+    "husky": "4.2.5",
+    "markdownlint": "0.20.4",
+    "markdownlint-cli": "0.23.2",
+    "readme-md-generator": "1.0.0",
+    "textlint": "11.6.3",
+    "textlint-filter-rule-comments": "1.2.2",
+    "textlint-rule-ginger": "2.2.1",
+    "textlint-rule-ja-space-after-question": "2.0.1",
+    "textlint-rule-max-ten": "2.0.3",
+    "textlint-rule-no-dead-link": "4.7.0",
+    "textlint-rule-no-mix-dearu-desumasu": "4.0.1",
+    "textlint-rule-preset-ja-spacing": "2.0.1",
+    "textlint-rule-preset-ja-technical-writing": "4.0.0",
+    "textlint-rule-preset-japanese": "5.0.0",
+    "textlint-rule-preset-jtf-style": "2.3.4",
+    "textlint-rule-prh": "5.3.0",
+    "textlint-rule-spellcheck-tech-word": "5.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run document && yarn run lint && git add --all",
+      "pre-push": "#"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-emoji"
+    }
+  }
+}

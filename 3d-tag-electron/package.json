@@ -1,0 +1,51 @@
+{
+  "name": "3d-tag-electron",
+  "version": "1.0.0",
+  "private": true,
+  "description": "3d-tag-electron",
+  "author": "waricoma <waricoma@devne.co>",
+  "contributors": [
+    "waricoma <waricoma@devne.co>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/waricoma/3d-tag-online#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waricoma/3d-tag-online.git"
+  },
+  "keywords": [
+    "Electron",
+    "WebRTC",
+    "SkyWay",
+    "Unity"
+  ],
+  "bugs": {
+    "url": "https://github.com/waricoma/3d-tag-online/issues"
+  },
+  "engines": {
+    "yarn": ">=1.22.4",
+    "node": ">=12.16.2"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-packager . --platform=darwin,win32,linux --arch=x64 --overwrite",
+    "build_win": "electron-packager . --platform=win32 --arch=x64 --overwrite",
+    "build_linux": "electron-packager . --platform=linux --arch=x64 --overwrite",
+    "build_mac": "electron-packager . --platform=darwin --arch=x64 --overwrite",
+    "lint": "semistandard --fix ./*.js"
+  },
+  "devDependencies": {
+    "electron": "^9.1.0",
+    "electron-packager": "^15.0.0",
+    "semistandard": "13.0.1"
+  },
+  "dependencies": {
+    "chokidar": "^3.4.0",
+    "find-free-port": "^2.0.0",
+    "http": "^0.0.1-security",
+    "ngrok": "^3.2.7",
+    "node-static": "^0.7.11",
+    "skyway-gateway": "^0.2.23"
+  }
+}

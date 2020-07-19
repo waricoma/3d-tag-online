@@ -1,0 +1,13 @@
+body {
+  margin: 0 auto;
+}
+
+#viewer {
+  width: 62%;
+  /*
+  width=422px;
+  height=316px;
+  */
+  margin-left: 19%;
+  margin-right: 19%;
+}
