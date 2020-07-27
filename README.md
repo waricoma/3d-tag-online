@@ -13,7 +13,7 @@
 
 ### ✨ [Demo](https://drive.google.com/file/d/1LYuvuPWhX0OR4zKTOVA22NqdIHKACcko/view?usp=sharing)
 
-<iframe width="560" height="315" src="https://youtube.googleapis.com/embed/?partnerid=30&docid=1LYuvuPWhX0OR4zKTOVA22NqdIHKACcko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![demo video](https://lh5.googleusercontent.com/gJluZqGZd2Xr9xuhPvKo6aNACHt6ychEMP0xpVGXNhmjN-sZH2BdCMZ9lVG5QhezdReFW8H8xqInHeDKLRyl=w1920-h1080-k-rw-pd)](https://youtube.googleapis.com/embed/?partnerid=30&docid=1LYuvuPWhX0OR4zKTOVA22NqdIHKACcko)
 
 ## Prerequisites
 
