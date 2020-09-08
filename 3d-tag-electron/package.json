@@ -38,7 +38,7 @@
   "devDependencies": {
     "electron": "9.3.0",
     "electron-packager": "15.1.0",
-    "semistandard": "13.0.1"
+    "semistandard": "14.2.3"
   },
   "dependencies": {
     "chokidar": "3.4.2",
