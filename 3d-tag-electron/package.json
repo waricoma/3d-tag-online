@@ -36,16 +36,16 @@
     "lint": "semistandard --fix ./*.js"
   },
   "devDependencies": {
-    "electron": "^9.1.0",
-    "electron-packager": "^15.0.0",
+    "electron": "9.3.0",
+    "electron-packager": "15.1.0",
     "semistandard": "13.0.1"
   },
   "dependencies": {
-    "chokidar": "^3.4.0",
-    "find-free-port": "^2.0.0",
-    "http": "^0.0.1-security",
-    "ngrok": "^3.2.7",
-    "node-static": "^0.7.11",
-    "skyway-gateway": "^0.2.23"
+    "chokidar": "3.4.2",
+    "find-free-port": "2.0.0",
+    "http": "0.0.1-security",
+    "ngrok": "3.3.0",
+    "node-static": "0.7.11",
+    "skyway-gateway": "0.2.23"
   }
 }
