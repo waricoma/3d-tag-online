@@ -36,7 +36,7 @@
     "lint": "semistandard --fix ./*.js"
   },
   "devDependencies": {
-    "electron": "10.1.1",
+    "electron": "10.1.2",
     "electron-packager": "15.1.0",
     "semistandard": "13.0.1"
   },
