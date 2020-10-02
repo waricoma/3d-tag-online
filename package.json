@@ -65,7 +65,7 @@
     "ignore": "curl https://raw.githubusercontent.com/microsoft/TypeScript/master/.gitignore | add-text-to-markdown ./.gitignore --section 'microsoft/TypeScript:.gitignore' --write"
   },
   "devDependencies": {
-    "@textlint/textlint-plugin-markdown": "5.1.12",
+    "@textlint/textlint-plugin-markdown": "5.2.6",
     "add-text-to-markdown": "2.0.0",
     "commitizen": "4.2.1",
     "cz-emoji": "1.2.2",
