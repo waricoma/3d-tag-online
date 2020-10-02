@@ -68,7 +68,7 @@
     "@textlint/textlint-plugin-markdown": "5.1.12",
     "add-text-to-markdown": "2.0.0",
     "commitizen": "4.2.1",
-    "cz-emoji": "1.2.1",
+    "cz-emoji": "1.2.2",
     "husky": "4.3.0",
     "markdownlint": "0.21.0",
     "markdownlint-cli": "0.24.0",
