@@ -70,7 +70,7 @@
     "commitizen": "4.2.2",
     "cz-emoji": "1.2.2",
     "husky": "4.3.0",
-    "markdownlint": "0.21.1",
+    "markdownlint": "0.22.0",
     "markdownlint-cli": "0.25.0",
     "readme-md-generator": "1.0.0",
     "textlint": "11.7.6",
