@@ -69,7 +69,7 @@
     "add-text-to-markdown": "2.0.0",
     "commitizen": "4.2.2",
     "cz-emoji": "1.2.2",
-    "husky": "4.3.0",
+    "husky": "4.3.4",
     "markdownlint": "0.22.0",
     "markdownlint-cli": "0.25.0",
     "readme-md-generator": "1.0.0",
