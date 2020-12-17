@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "electron": "11.1.0",
-    "electron-packager": "15.1.0",
+    "electron-packager": "15.2.0",
     "semistandard": "16.0.0"
   },
   "dependencies": {
