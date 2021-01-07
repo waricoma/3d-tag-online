@@ -41,7 +41,7 @@
     "semistandard": "16.0.0"
   },
   "dependencies": {
-    "chokidar": "3.4.3",
+    "chokidar": "3.5.0",
     "find-free-port": "2.0.0",
     "http": "0.0.1-security",
     "ngrok": "3.4.0",
